@@ -36,3 +36,6 @@ mongoose.connect(dbConfig.url, {
     console.log('Could not connect to the database. Exiting now...', err);
     process.exit();
 });
+
+// Require Notes routes
+require('./app/routes/note.routes.js')(app);
